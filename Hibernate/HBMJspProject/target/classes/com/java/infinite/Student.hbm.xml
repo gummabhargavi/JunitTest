@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+ <class name="com.java.infinite.Student" table="student">
+   <id name="studentId" column="stu_id">
+   <generator class="native"></generator>
+ </id>
+ <property name="studentName" column="stu_name" type="string"></property>
+  <property name="studentEmail" column="stu_email" type="string"></property>
+  <property name="phoneNumber" column="stu_phno" type="string"></property>
+  <property name="studentAge" column="stu_age"></property>
+  <property name="studentQualification" column="stu_qualification" type="string"></property>
+ 
+ </class>
+</hibernate-mapping>

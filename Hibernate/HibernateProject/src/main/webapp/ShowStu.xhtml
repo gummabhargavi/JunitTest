@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<h:body> 
+     <h:form>
+		<center>
+
+			<h:dataTable value="#{studentDAOImp1.showStudent()}" var="e">
+				
+					<h:column>
+						<f:facet name="header">Student Id</f:facet>
+						#{e.stuId}
+					</h:column>
+
+					<h:column>
+						<f:facet name="header">Student Name</f:facet>
+						#{e.stuName}
+					</h:column>
+
+					<h:column>
+						<f:facet name="header">Student Email</f:facet>
+						#{e.email}
+					</h:column>
+
+					<h:column>
+						<f:facet name="header">Student Pho</f:facet>
+						#{e.phno}
+					</h:column>
+
+					<h:column>
+						<f:facet name="header">Qualification</f:facet>
+						#{e.qualification}
+					</h:column>
+					<h:column>
+						<f:facet name="header">Student Age</f:facet>
+						#{e.stuAge}
+					</h:column>
+			
+			</h:dataTable>
+		</center>
+	</h:form>
+</h:body> 
+</html>
